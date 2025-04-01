@@ -1,4 +1,13 @@
 # LoRa_APRS_Tracker
+## Grupo 7
+Integrantes
+
+- Ricardo Sanchez Calderón
+- Marco Umaña Vallejos
+- Marco Alfaro Bolaños
+
+
+
 ## Descripción
 Este repositorio contiene el firmware para un rastreador y estación APRS utilizando placas basadas en ESP32 con módulos LoRa y GPS. Basado en el proyecto original de [Richonguzman / CA2RXU LoRa APRS Tracker/Station.
 ](https://github.com/richonguzman/LoRa_APRS_Tracker)
