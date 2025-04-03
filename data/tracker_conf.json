@@ -6,29 +6,56 @@
 			"symbol": "[",
 			"overlay": "/",
 			"micE": "",
-			"comment": "",
-			"smartBeaconActive": true,
-			"smartBeaconSetting": 0	
+			"comment": "Dispositivo Tracker || Grupo 7 || Ricardo Sanchez, Marco Umaña, Marco Alfaro.",
+			"smartBeacon": {
+				"active": true,
+				"slowRate": 120,
+				"slowSpeed": 3,
+				"fastRate": 60,
+				"fastSpeed": 15,
+				"minTxDist": 50,
+				"minDeltaBeacon": 20,
+				"turnMinDeg": 12,
+				"turnSlope": 60
+			}			
 		},
 		{
-			"callsign": "NOCALL-7",
+			"callsign": "TI3JMS-7",
 			"gpsEcoMode": false,
 			"symbol": ">",
 			"overlay": "/",
 			"micE": "",
-			"comment": "",
-			"smartBeaconActive": true,
-			"smartBeaconSetting": 2
+			"comment": "Segunda Prueba de funcionalidad al cambio de callsign's",
+			"smartBeacon": {
+				"active": true,
+				"slowRate": 120,
+				"slowSpeed": 10,
+				"fastRate": 60,
+				"fastSpeed": 70,
+				"minTxDist": 100,
+				"minDeltaBeacon": 12,
+				"turnMinDeg": 10,
+				"turnSlope": 80
+			}
 		},
 		{
-			"callsign": "NOCALL-7",
+			"callsign": "TI3ABC-7",
 			"gpsEcoMode": false,
 			"symbol": "b",
 			"overlay": "/",
 			"micE": "",
-			"comment": "",
-			"smartBeaconActive": true,
-			"smartBeaconSetting": 1
+			"comment": "Test 3 funciones",
+			"smartBeacon": {
+				"active": true,
+				"slowRate": 120,
+				"slowSpeed": 5,
+				"fastRate": 60,
+				"fastSpeed": 40,
+				"minTxDist": 100,
+				"minDeltaBeacon": 12,
+				"turnMinDeg": 12,
+				"turnSlope": 60
+			}
 		}
 	],
 	"display": {
@@ -37,35 +64,30 @@
 		"timeout": 4,
 		"turn180" : false
     },
-	"battery": {
-		"sendVoltage": false,
-		"voltageAsTelemetry": false,
-		"sendVoltageAlways": false,
-		"monitorVoltage": false,
-		"sleepVoltage": 2.9
-	},
 	"other": {
 		"simplifiedTrackerMode": false,
 		"sendCommentAfterXBeacons": 10,
 		"path": "WIDE1-1",
 		"nonSmartBeaconRate": 15,
 		"rememberStationTime": 30,
+		"maxDistanceToTracker": 30, 
 		"standingUpdateTime": 15,
 		"sendAltitude": true,
-		"disableGPS": false,
-		"acceptOwnFrameFromTNC": false,
-		"email": ""
+		"sendBatteryInfo": true,
+		"bluetoothType": 1,
+		"bluetoothActive": true,
+		"disableGPS": false
 	},
 	"winlink": {
 		"password": "ABCDEF"
 	},
-	"wxsensor": {
+	"bme": {
 		"active": false,
 		"temperatureCorrection": 0.0,
 		"sendTelemetry": false
 	},
 	"notification": {
-		"ledTx": false,
+		"ledTx": true,
 		"ledTxPin": 13,
 		"ledMessage": false,
 		"ledMessagePin": 2,
@@ -104,22 +126,12 @@
 			"power": 20
 		}
 	],
-	"bluetooth": {
-		"active": false,
-		"deviceName": "LoRaTracker",
-		"useBLE": false,
-		"useKISS": false
-	},
 	"pttTrigger": {
 		"active": false,
 		"io_pin": 4,
 		"preDelay": 0,
 		"postDelay": 0,
 		"reverse": false
-	},
-	"wifiAP": {
-		"active": false,
-		"password": "1234567890"
 	}
-
 }
+		
