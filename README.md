@@ -121,6 +121,28 @@ power: Establece el nivel de potencia de salida en la transmisión LoRa. Ajustar
 
 ## Conexión
 
+1-Abrir el archivo de configuración
+Con el entorno ya preparado, accede al archivo principal de configuración del transmisor, el cual usualmente se encuentra dentro del directorio src o config. Este archivo contiene los parámetros clave para el funcionamiento del dispositivo.
+
+2-Personalizar parámetros del dispositivo
+Ajusta los valores de configuración de acuerdo con tus necesidades. Entre ellos, el callsign es uno de los más relevantes. En el ejemplo de referencia, se incluyen tres posibles identificadores para ilustrar diferentes formas de identificación dentro de la red APRS. Es importante que este parámetro sea único por dispositivo para evitar conflictos de red.
+
+3-Seleccionar la placa de desarrollo adecuada
+Asegúrate de que el tipo de hardware seleccionado sea compatible con tu dispositivo. En este caso, se debe elegir la opción "ttgo-t-beam-v1_2" en la configuración del entorno, ya que corresponde al modelo exacto de la placa utilizada. Esta configuración define aspectos como pines, controladores y librerías necesarias.
+
+4-Ejecutar la verificación del código (Compilación)
+Utiliza la opción de Build en PlatformIO para compilar el código. Esta acción revisa la sintaxis, enlaza las bibliotecas y genera los binarios necesarios. Si existen errores en la configuración o el código fuente, se mostrarán en la consola para su corrección.
+
+5-Construir el proyecto
+Una vez compilado correctamente, se procede a construir el proyecto. Este paso prepara el firmware final que será cargado en el microcontrolador. Si se encuentra conectado el dispositivo, también puede iniciarse el proceso de carga automática desde la misma interfaz.
+
+
+6-Acceder al menú de PlatformIO
+Una vez completada la compilación del proyecto, dirígete al menú lateral de PlatformIO dentro de Visual Studio Code. Este menú contiene todas las herramientas necesarias para gestionar, cargar y monitorear el dispositivo.
+
+7-Cargar el sistema de archivos al dispositivo
+En la sección correspondiente al entorno de la placa configurada, localiza la opción "Upload Filesystem Image". Esta función permite cargar al dispositivo todos los archivos necesarios que no forman parte del firmware directamente, como configuraciones adicionales, imágenes, registros o recursos estáticos. Esta operación es esencial para garantizar que el dispositivo tenga acceso a todos los elementos requeridos para su funcionamiento en campo.
+
 Si el proceso fue exitoso el dispositivo procede a reiniciarse, posterormente inicia el trackeo y en su pantalla se logra observar el identificador además de otros datos reelevantes como la bateía restante.
 ![photo_5167904899558649634_y](https://github.com/user-attachments/assets/3d632971-ddec-40f9-8b66-885ba5e39170)
 
