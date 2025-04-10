@@ -66,3 +66,18 @@ Telemetría de sensores remotos.
 - Función DigiRepeater para asistencia en emergencias.
 - Detección automática de sensores BME y BMP (BME280/BMP280/BME680).
 - Posibilidad de apagar el rastreador con tres pulsaciones del botón central en modelos T-Beams.
+
+# Que es loRa?
+LoRa, abreviatura de Long Range, es una tecnología de comunicación inalámbrica que permite la transmisión de datos a largas distancias con un consumo energético mínimo. Su funcionamiento se basa en una técnica de modulación llamada chirp spread spectrum, donde las señales varían de frecuencia durante el envío, lo que proporciona una gran inmunidad al ruido y permite mantener la estabilidad de la señal incluso en entornos con muchas interferencias.
+
+Esta tecnología se ha convertido en una de las favoritas para sistemas que requieren comunicaciones eficientes, económicas y de largo alcance, sin necesidad de recurrir a redes celulares. LoRa es especialmente útil en aplicaciones que no demandan altas tasas de transferencia de datos, sino más bien confiabilidad y alcance, como sucede con sensores remotos o dispositivos distribuidos en zonas rurales o urbanas de difícil acceso.
+
+Entre los casos de uso más destacados se encuentran los sistemas de monitoreo agrícola, donde sensores distribuidos por campos o invernaderos pueden reportar información sobre humedad, temperatura o estado del cultivo. También es clave en infraestructura de ciudades inteligentes, donde se requiere recolectar datos sobre niveles de contaminación, estado del tráfico, consumo de energía, o incluso la ubicación de contenedores de basura inteligentes.
+
+A diferencia de tecnologías como WiFi o Bluetooth, LoRa puede alcanzar distancias de varios kilómetros sin perder estabilidad en la comunicación, lo que la hace perfecta para redes IoT de bajo consumo. Además, opera en bandas de frecuencia no licenciadas, lo cual facilita su implementación sin grandes costos regulatorios. En América Latina, por ejemplo, suele utilizarse la banda ISM de 900 MHz, específicamente el rango de 902 a 928 MHz en países como Costa Rica.
+
+En cuanto al desarrollo de proyectos con esta tecnología, existen múltiples plataformas que permiten su integración. Una de las más utilizadas es el microcontrolador ESP32, compatible con módulos LoRa como el SX1276 o SX1278. El ESP32 no solo facilita la conexión inalámbrica mediante LoRa, sino que también incluye conectividad WiFi y Bluetooth, y puede configurarse para operar con diferentes velocidades de reloj, lo que le otorga una gran flexibilidad en aplicaciones tanto comerciales como experimentales.
+
+Gracias a su bajo consumo energético, robustez y simplicidad de implementación, LoRa continúa posicionándose como una solución clave en redes distribuidas de sensores, automatización remota y otras aplicaciones de monitoreo que requieren confiabilidad y bajo mantenimiento.
+
+#Procedimiento
