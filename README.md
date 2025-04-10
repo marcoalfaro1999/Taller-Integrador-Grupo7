@@ -81,8 +81,48 @@ En cuanto al desarrollo de proyectos con esta tecnología, existen múltiples pl
 Gracias a su bajo consumo energético, robustez y simplicidad de implementación, LoRa continúa posicionándose como una solución clave en redes distribuidas de sensores, automatización remota y otras aplicaciones de monitoreo que requieren confiabilidad y bajo mantenimiento.
 
 # Procedimiento
-Si el proceso fue exitoso el dispositivo procede a reiniciarse, posterormente inicia el trackeo y en su pantalla se logra obse4rvar el identificador además de otros datos reelevantes como la bateía restante
+
+Una vez descargado el firmware correspondiente al LoRa APRS Tracker, el siguiente paso es la configuración del entorno de desarrollo. Para ello, se utiliza PlatformIO, una extensión del editor Visual Studio Code, diseñada para facilitar el desarrollo de software embebido.
+
+El proceso comienza iniciando un nuevo proyecto dentro de PlatformIO. En lugar de crear uno desde cero, se opta por la opción "Import Project", que permite cargar un proyecto ya existente. Durante este paso, es necesario seleccionar la placa de desarrollo específica por ejemplo ESP32 o STM32 en función de la placa a utilizar, así como la ruta del directorio donde se encuentra el firmware descargado.
+
+Una vez importado el proyecto, PlatformIO configura automáticamente el entorno, incluyendo la plataforma objetivo, los entornos de compilación y las bibliotecas necesarias. Esto permite compilar y cargar el firmware directamente en la placa desde la misma interfaz, facilitando el flujo de trabajo para desarrolladores de sistemas embebidos.
+
+Este procedimiento se ilustra en las siguientes imágenes, donde se detallan cada uno de los pasos mencionados, desde la importación hasta la selección del hardware y ubicación del proyecto.
+
+## Entorno de desarroollo
+Dentro del entorno de desarrollo del LoRa APRS Tracker, existen varios bloques de configuración clave que permiten personalizar el comportamiento del dispositivo según los requisitos del usuario y el entorno donde será desplegado. A continuación, se describen las secciones más relevantes del archivo de configuración:
+
+-Bacon
+Esta sección está dedicada a la identificación del dispositivo y al control de la transmisión de datos APRS.
+
+Callsign: Define el nombre de identificación del nodo en la red APRS. Se compone de dos partes:
+
+Prefijo: Generalmente, los primeros caracteres corresponden al indicativo nacional del país. En el caso de Costa Rica, se utiliza el prefijo "TI", seguido de letras o números que identifican el sistema o la zona donde opera el equipo. Por ejemplo, un "TI3" puede indicar que el dispositivo opera en la provincia de Cartago.
+
+SSID: El sufijo numérico indica la función del dispositivo dentro de la red. Por ejemplo, un SSID de 0 usualmente representa un IGate o estación base, mientras que un 7 se asocia con trackers móviles o nodos transmisores.
+
+Symbol: Corresponde al ícono visual que será mostrado en los mapas APRS para representar la posición del dispositivo. La elección del símbolo depende del tipo de estación (vehículo, base fija, persona, etc.).
+
+Comment: Es un mensaje adicional que se envía junto con cada paquete de datos, útil para proporcionar información sobre el propósito del dispositivo, su ubicación o estado operativo.
+
+SmartBeacon: Parámetros que controlan la lógica de transmisión adaptativa. Esta función ajusta automáticamente el intervalo de envío de paquetes dependiendo de la velocidad y dirección del dispositivo, optimizando el uso del canal de radio y reduciendo el tráfico innecesario.
+
+-Display
+showSymbol: Habilita la visualización del símbolo asociado al dispositivo en una pantalla local, si está disponible. Esta opción es útil para verificar en tiempo real el estado del nodo o para fines demostrativos.
+
+-Notificación
+ledTx: Activa un indicador luminoso (LED) que se enciende cada vez que se realiza una transmisión APRS. Esta función es útil para diagnóstico visual, indicando que el equipo está transmitiendo correctamente.
+
+-LoRa
+frequency: Define la frecuencia de operación del módulo LoRa. En cumplimiento con la normativa nacional de telecomunicaciones, este valor se ajusta comúnmente a 433.775 MHz en Costa Rica, dentro del rango permitido para aplicaciones de baja potencia.
+
+power: Establece el nivel de potencia de salida en la transmisión LoRa. Ajustar este parámetro permite balancear el alcance de la señal y el consumo energético del dispositivo, algo esencial en implementaciones autónomas con alimentación limitada.
+
+## Conexión
+
+Si el proceso fue exitoso el dispositivo procede a reiniciarse, posterormente inicia el trackeo y en su pantalla se logra observar el identificador además de otros datos reelevantes como la bateía restante.
 ![photo_5167904899558649634_y](https://github.com/user-attachments/assets/3d632971-ddec-40f9-8b66-885ba5e39170)
 
-Finalmente se realiza la busqueda del modulo en la pagina web aprs.fi
+Finalmente se realiza la busqueda del modulo en la página web aprs.fi , de forma que se observa en dispositvo en el mapa, además de el trazo del recorrido realizado, en funcion del tiempo sellecionado en la página web.
 ![photo_5167904899558649633_y (1)](https://github.com/user-attachments/assets/ceba1da4-c4d5-4f52-b4ca-1d35ec8fd62d)
