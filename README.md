@@ -67,7 +67,7 @@ Telemetría de sensores remotos.
 - Detección automática de sensores BME y BMP (BME280/BMP280/BME680).
 - Posibilidad de apagar el rastreador con tres pulsaciones del botón central en modelos T-Beams.
 
-# Que es loRa?
+# Que es LoRa?
 LoRa, abreviatura de Long Range, es una tecnología de comunicación inalámbrica que permite la transmisión de datos a largas distancias con un consumo energético mínimo. Su funcionamiento se basa en una técnica de modulación llamada chirp spread spectrum, donde las señales varían de frecuencia durante el envío, lo que proporciona una gran inmunidad al ruido y permite mantener la estabilidad de la señal incluso en entornos con muchas interferencias.
 
 Esta tecnología se ha convertido en una de las favoritas para sistemas que requieren comunicaciones eficientes, económicas y de largo alcance, sin necesidad de recurrir a redes celulares. LoRa es especialmente útil en aplicaciones que no demandan altas tasas de transferencia de datos, sino más bien confiabilidad y alcance, como sucede con sensores remotos o dispositivos distribuidos en zonas rurales o urbanas de difícil acceso.
