@@ -81,3 +81,7 @@ En cuanto al desarrollo de proyectos con esta tecnología, existen múltiples pl
 Gracias a su bajo consumo energético, robustez y simplicidad de implementación, LoRa continúa posicionándose como una solución clave en redes distribuidas de sensores, automatización remota y otras aplicaciones de monitoreo que requieren confiabilidad y bajo mantenimiento.
 
 #Procedimiento
+Si el proceso fue exitoso el dispositivo procede a reiniciarse, posterormente inicia el trackeo y en su pantalla se logra obse4rvar el identificador además de otros datos reelevantes como la bateía restante
+![photo_5167904899558649634_y](https://github.com/user-attachments/assets/3d632971-ddec-40f9-8b66-885ba5e39170)
+Finalmente se realiza la busqueda del modulo en la pagina web aprs.fi
+![photo_5167904899558649633_y (1)](https://github.com/user-attachments/assets/ceba1da4-c4d5-4f52-b4ca-1d35ec8fd62d)
