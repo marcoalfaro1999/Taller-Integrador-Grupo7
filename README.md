@@ -143,6 +143,8 @@ Utiliza la opción de Build en PlatformIO para compilar el código. Esta acción
 5-Construir el proyecto
 Una vez compilado correctamente, se procede a construir el proyecto. Este paso prepara el firmware final que será cargado en el microcontrolador. Si se encuentra conectado el dispositivo, también puede iniciarse el proceso de carga automática desde la misma interfaz.
 
+![captura 3](https://github.com/user-attachments/assets/a5ca25ce-cf49-4c6e-9bc0-4564ee423e23)
+
 
 6-Acceder al menú de PlatformIO
 Una vez completada la compilación del proyecto, dirígete al menú lateral de PlatformIO dentro de Visual Studio Code. Este menú contiene todas las herramientas necesarias para gestionar, cargar y monitorear el dispositivo.
