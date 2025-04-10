@@ -13,8 +13,13 @@ Este repositorio contiene el firmware para un rastreador y estación APRS utiliz
 ](https://github.com/richonguzman/LoRa_APRS_Tracker)
 
 # Que es APRS?
-APRS (Automatic Packet Reporting System) es un sistema de comunicación digital utilizado principalmente en radioaficionados para el intercambio en tiempo real de información como la ubicación GPS, datos meteorológicos, mensajes de texto y telemetría. Fue desarrollado por Bob Bruninga (WB4APR) en la década de 1980 y funciona sobre redes de radio VHF/UHF y, en algunos casos, sobre Internet mediante servidores APRS-IS.
+El Sistema Automático de Reporte de Paquetes, conocido como APRS (Automatic Packet Reporting System), es una tecnología de comunicación digital en tiempo real, ampliamente utilizada por radioaficionados para compartir información útil como coordenadas GPS, datos meteorológicos, mensajes breves y señales de telemetría. Fue desarrollado en los años 80 por Bob Bruninga (WB4APR) y opera principalmente sobre redes de radio VHF y UHF, aunque también puede integrarse a través de Internet mediante servidores conocidos como APRS-IS.
 
+Este sistema permite una comunicación bidireccional entre múltiples usuarios conectados a una misma red, facilitando el envío y la recepción continua de información considerada de interés para una comunidad local o una red más amplia. Cualquier dato relevante en el entorno, como la posición de un vehículo, condiciones del clima o parámetros de sensores, puede ser detectado por un dispositivo APRS y transmitido automáticamente.
+
+Las transmisiones suelen realizarse en frecuencias compartidas, y la información se repite mediante estaciones de retransmisión para ampliar su cobertura. Además, los datos pueden ser introducidos en la red global mediante estaciones pasarela (IGate), que los suben a la infraestructura de APRS en Internet, haciéndolos accesibles a otros usuarios desde cualquier parte del mundo.
+
+En cuanto a los protocolos utilizados, el más común es el AX.25, una versión adaptada del protocolo X.25 especialmente diseñado para la comunidad de radioaficionados. No obstante, dependiendo del propósito o aplicación específica, se pueden emplear otros protocolos de comunicación compatibles con APRS.
 
 ## Caracteristicas de APRS
 - Transmisión de Datos en Tiempo Real: Permite enviar y recibir información sin necesidad de una conexión a Internet, usando radios y repetidores.
