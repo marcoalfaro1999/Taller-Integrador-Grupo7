@@ -120,12 +120,19 @@ frequency: Define la frecuencia de operación del módulo LoRa. En cumplimiento 
 power: Establece el nivel de potencia de salida en la transmisión LoRa. Ajustar este parámetro permite balancear el alcance de la señal y el consumo energético del dispositivo, algo esencial en implementaciones autónomas con alimentación limitada.
 
 ## Conexión
+![captura 1](https://github.com/user-attachments/assets/2032729c-e1d0-40e7-8fa0-961afd0c524a)
+
+
 
 1-Abrir el archivo de configuración
 Con el entorno ya preparado, accede al archivo principal de configuración del transmisor, el cual usualmente se encuentra dentro del directorio src o config. Este archivo contiene los parámetros clave para el funcionamiento del dispositivo.
 
 2-Personalizar parámetros del dispositivo
 Ajusta los valores de configuración de acuerdo con tus necesidades. Entre ellos, el callsign es uno de los más relevantes. En el ejemplo de referencia, se incluyen tres posibles identificadores para ilustrar diferentes formas de identificación dentro de la red APRS. Es importante que este parámetro sea único por dispositivo para evitar conflictos de red.
+
+
+![captura 2](https://github.com/user-attachments/assets/94224034-ed71-4558-8150-e70aa14b5667)
+
 
 3-Seleccionar la placa de desarrollo adecuada
 Asegúrate de que el tipo de hardware seleccionado sea compatible con tu dispositivo. En este caso, se debe elegir la opción "ttgo-t-beam-v1_2" en la configuración del entorno, ya que corresponde al modelo exacto de la placa utilizada. Esta configuración define aspectos como pines, controladores y librerías necesarias.
