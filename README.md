@@ -90,7 +90,7 @@ Una vez importado el proyecto, PlatformIO configura automáticamente el entorno,
 
 Este procedimiento se ilustra en las siguientes imágenes, donde se detallan cada uno de los pasos mencionados, desde la importación hasta la selección del hardware y ubicación del proyecto.
 
-## Entorno de desarroollo
+## Entorno de desarrollo
 Dentro del entorno de desarrollo del LoRa APRS Tracker, existen varios bloques de configuración clave que permiten personalizar el comportamiento del dispositivo según los requisitos del usuario y el entorno donde será desplegado. A continuación, se describen las secciones más relevantes del archivo de configuración:
 
 -Bacon
